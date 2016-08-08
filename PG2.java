@@ -2,8 +2,7 @@ import java.util.Scanner;
 public class PG2 {
 	public static void main(String[] args) {
 		Scanner s=new Scanner(System.in);
-		String str1=s.next();
-		StringBuffer str=new StringBuffer(str1);
+		StringBuffer str=new StringBuffer(s.next());
 		for(int i=0;i<str.length();i++)
 			for(int j=i+1;j<str.length();){
 				if(str.charAt(j)==str.charAt(i))
@@ -11,9 +10,9 @@ public class PG2 {
 				else
 					j++;
 			}
-		for(int i=0;i<str.length();i++)
-			System.out.print(str.charAt(i));
+		System.out.print(str);
 		s.close();
 	}
 
 }
+
